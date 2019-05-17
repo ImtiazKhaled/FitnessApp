@@ -72,25 +72,28 @@ class _LoginState extends State<Login>  {
     );
 
     //a styled general text field
-    _inputTextField(String hintText, bool _obsecureText, TextEditingController output) => TextField(
-      controller: output,
-      decoration: InputDecoration(
-        //fillColor: Theme.of(context).accentColor,
-        hintText: "$hintText",
-        enabledBorder: OutlineInputBorder(
-        borderSide: BorderSide(
-            color:Theme.of(context).accentColor,
-            width: 2.5,
-            ),
-        borderRadius: BorderRadius.all(Radius.circular(40.0),),
-        ),
-        hintStyle: TextStyle(
-          color: Theme.of(context).accentColor,
+    _inputTextField(String hintText, bool _obsecureText, TextEditingController output) => Container(
+        height: height * 0.06,
+        child: TextField(
+        controller: output,
+        decoration: InputDecoration(
+          //fillColor: Theme.of(context).accentColor,
+          hintText: "$hintText",
+          enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+              color:Theme.of(context).accentColor,
+              width: 2.5,
+              ),
+          borderRadius: BorderRadius.all(Radius.circular(40.0),),
           ),
-        border: OutlineInputBorder(),
-        ),
-        obscureText: _obsecureText,
-    ); 
+          hintStyle: TextStyle(
+            color: Theme.of(context).accentColor,
+            ),
+          border: OutlineInputBorder(),
+          ),
+          obscureText: _obsecureText,
+      ),
+    );
 
     //the styled login button
     _styledButton(String buttonText, var callBack) => ButtonTheme(
