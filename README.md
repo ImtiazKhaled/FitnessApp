@@ -1,6 +1,6 @@
 # fitnessapp
 
-A new Flutter project.
+💪🥊 👂 👊 🥛 🥗 A Flutter App focused on improving one's health by providing them with an auto generated workout, or the choice to customize a workout from the numerous workouts provided.
 
 ## Getting Started
 
