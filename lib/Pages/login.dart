@@ -122,12 +122,12 @@ class _LoginState extends State<Login>  {
       _inputTextField("password", true, textControllerPassword),
       SizedBox(height: height * 0.03), 
       Row(
-        mainAxisAlignment: MainAxisAlignment.end, 
+        mainAxisAlignment: MainAxisAlignment.spaceAround, 
         children: <Widget>[
             _styledButton("Sign In", _loginButtonClickedShort),
-            SizedBox(width: width * 0.03),
+            //SizedBox(width: width * 0.03),
             _styledButton("Sign Up", _signUpButtonClickedShort),
-          ],
+          ]
       )
     ];
 
@@ -145,12 +145,12 @@ class _LoginState extends State<Login>  {
         _inputTextField("phone", false, textControllerPhone),
         SizedBox(height: height * 0.03),
             Row(
-        mainAxisAlignment: MainAxisAlignment.end, 
+        mainAxisAlignment: MainAxisAlignment.spaceAround, 
         children: <Widget>[
           _styledButton("Sign Up", _signUpButtonClickedHigh),
-          SizedBox(width: width * 0.03),
+          //SizedBox(width: width * 0.03),
           _styledButton("Sign In", _loginButtonClickedHigh),
-        ],
+        ]
       )
     ];
 
@@ -195,7 +195,7 @@ class _LoginState extends State<Login>  {
 
 
     return new Scaffold(
-        appBar: _hookahLogoAppBar("FitnessApp", "lib/Assets/fitness-app_logo.png"),
+        appBar: _hookahLogoAppBar("Fitness App", "lib/Assets/fitness-app_logo.png"),
         body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
